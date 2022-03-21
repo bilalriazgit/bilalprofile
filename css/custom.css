@@ -19,17 +19,19 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .bg-primary{ background-color:var(--bs-primary);}
 
 .top-head{ background-color:#000; color:#FFF; font-family:Trebuchet; display:flex; flex:1; height:45px;}
-.top-head p{ display:flex; align-items:center; margin:0; justify-content:center; font-size:14px;}
-.top-head p .bi{ margin:0 10px 0 0;}
-.top-head p a .bi{ color:#FFF; font-size:20px; margin:0;}
+.top-head .col{ display:flex; flex:auto; font-size:14px;}
+.top-head .col .bi{ margin:0 10px 0 0;}
+.top-head .col a .bi{ color:#FFF; font-size:20px; margin:0;}
+
 .navbar-brand{ width:100%; max-width:200px; height:75px;
     background-image:url("../assets/img/logo.png");
     background-repeat:no-repeat; background-size:contain; background-position:center;
 }
-.navbar-nav li{ margin:0 0 0 5px; display:inline-flex; align-items:center;}
-.navbar-nav li a:not(.btn){ font-family:Trebuchet; color:#000; font-size:16px; padding:12px 14px;}
-.navbar-nav li a:hover:not(.btn){ color:var(--bs-primary);}
-.navbar-nav li .btn img{ max-width:24px;}
+.navbar-nav >li{ margin:0 0 0 5px; display:inline-flex; align-items:center;}
+.navbar-nav >li >a:not(.btn){ font-family:Trebuchet; color:#000; font-size:16px; padding:8px 14px 10px; line-height:normal;}
+.navbar-nav >li a:hover:not(.btn){ color:var(--bs-primary);}
+.navbar-nav >li .btn img{ max-width:24px;}
+.navbar-nav >li.active >a:not(.btn){ border:1px solid var(--bs-primary); border-radius:50px; color:var(--bs-primary);}
 .navbar-toggler{ color:rgba(0, 0, 0, 0.55); border-color:rgba(0, 0, 0, 0.1);}
 .navbar-toggler .navbar-toggler-icon{
     background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -58,3 +60,6 @@ footer .nav li .nav-link{ color:#FFF;}
     background-repeat:no-repeat; background-size:contain; background-position:bottom center;
     background-attachment:fixed;
 }
+
+.inner-title-banner{ background-color:#eb6269; display:flex; align-items:center; padding:15px 0;}
+.inner-title-banner h1{ color:#FFF; margin:0; font-size:25px; line-height:normal; text-transform:uppercase;}
