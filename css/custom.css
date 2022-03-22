@@ -17,17 +17,17 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .btn{ border-radius:50px; min-width:40px; padding:8px 15px; font-family:Trebuchet;}
 .sec-pad{ padding:40px 0;}
 .bg-primary{ background-color:var(--bs-primary);}
+.bg-yellow{ background-color:#FFCC53;}
 
 .top-head{ background-color:#000; color:#FFF; font-family:Trebuchet; display:flex; flex:1; height:45px;}
 .top-head .col{ display:flex; flex:auto; font-size:14px;}
 .top-head .col .bi{ margin:0 10px 0 0;}
 .top-head .col a .bi{ color:#FFF; font-size:20px; margin:0;}
-
 .navbar-brand{ width:100%; max-width:200px; height:75px;
     background-image:url("../assets/img/logo.png");
     background-repeat:no-repeat; background-size:contain; background-position:center;
 }
-.navbar-nav >li{ margin:0 0 0 5px; display:inline-flex; align-items:center;}
+.navbar-nav >li{ display:inline-flex; align-items:center;}
 .navbar-nav >li >a:not(.btn){ font-family:Trebuchet; color:#000; font-size:16px; padding:8px 14px 10px; line-height:normal;}
 .navbar-nav >li a:hover:not(.btn){ color:var(--bs-primary);}
 .navbar-nav >li .btn img{ max-width:24px;}
@@ -36,30 +36,80 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .navbar-toggler .navbar-toggler-icon{
     background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+@media (max-width:1400px){
+    header .container{ max-width:1350px;}
+}
+@media (max-width:1300px){
+    .navbar-nav >li >a:not(.btn){ font-size:14px;}
+}
+@media (max-width:991px){
+    .navbar-brand{ max-width:180px;}
+    .top-head .col.one, .top-head .col.two{ display:none;}
+    .navbar-nav >li{ border-bottom:1px solid #DDD; align-items:start; flex-direction:column;}
+    .navbar-nav >li >a{ font-size:16px !important;}
+    .navbar-nav >li:last-child{ border-bottom:0; margin:14px 0 0;}
+    .navbar-nav .dropdown-menu{ border:0; padding:0; margin:0 10px;}
+}
+@media (max-width:500px){
+    .top-head .col.four{ display:none;}
+}
+
 footer{ color:#FFF;}
 footer .logo{ max-width:200px; color:#FFF;}
 footer .nav li .nav-link{ color:#FFF;}
+@media (max-width:500px){
+    footer .bg-black .row p{ text-align:center!important;}
+}
+
 
 .home-banner{ padding:30px 0;
     background-image:url("../assets/img/home-banner.jpg");
     background-repeat:no-repeat; background-size:cover; background-position:center;
 }
-.home-banner .treatment-holder{ margin-bottom:60px;}
 .home-banner .treatment-holder img{ max-width:170px; margin:auto; display:block;}
 .home-banner .treatment-holder .title{ font-family:Trebuchet; color:#FFF; font-weight:normal; text-align:center;
     padding:15px 0 0;
 }
+@media (max-width:991px){
+    .home-banner{ padding:0 0 15px;}
+    .home-banner{ background-position:center right;}
+}
+@media (max-width:500px){
+    .home-banner .treatment-holder img{ max-width:135px; width:100%;}
+    .home-banner .treatment-holder .title{ font-size:16px;}
+}
+.bravo-black-banner .text{ max-width:60%; margin:auto;}
+@media (max-width:991px){
+    .bravo-black-banner .text{ max-width:100%;}
+}
+
+
 .fastEasy-sec .row .img-fluid{ max-width:150px; margin:0 auto 30px; display:block;}
 .fastEasy-sec .row h5{ font-family:Trebuchet;}
 
 .guarantee-sec .img-fluid{ max-width:50px; margin:0 10px 0 0;}
 
 .testimonial-sec .img-fluid{ max-width:185px; display:block; margin:0 15px 0 0;}
-
 .bp-add-banner{ background-image:url("../assets/img/bp-add-banner.jpg"); height:480px;
     background-repeat:no-repeat; background-size:contain; background-position:bottom center;
-    background-attachment:fixed;
+    background-attachment:fixed; display:block;
+}
+@media (max-width:991px){
+    .testimonial-sec .row .col-sm-6{ flex-direction:column; text-align: center;}
+    .bp-add-banner{ height:310px; background-size:cover; background-position:82% center; background-attachment:scroll;}
 }
 
-.inner-title-banner{ background-color:#eb6269; display:flex; align-items:center; padding:15px 0;}
-.inner-title-banner h1{ color:#FFF; margin:0; font-size:25px; line-height:normal; text-transform:uppercase;}
+
+.inner-title-banner{ display:flex; align-items:center; padding:15px 0; min-height:300px;
+    background-repeat:no-repeat; background-size:cover; background-position:65% center;
+}
+.inner-title-banner.about-page{ background-color:#d6f2f9; background-image:url("../assets/img/inner-banner-about.jpg");}
+.inner-title-banner .sublink{ margin:0; text-transform:uppercase; letter-spacing:2px;}
+.inner-title-banner .title{ margin:0 0 20px; line-height:normal; font-size:60px;}
+.inner-title-banner .subpara{ margin:0; line-height:1.5; font-family:Trebuchet; font-weight:normal; max-width:600px;}
+
+.covid-banner .container{ max-width:1000px; display:flex; justify-content:space-between; padding:10px 15px;}
+
+@media (max-width:991px){
+    .sec-pad{ padding:15px 0;}
+}
