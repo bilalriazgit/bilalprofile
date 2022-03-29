@@ -89,7 +89,8 @@ footer .nav li .nav-link{ color:#FFF;}
 
 .guarantee-sec .img-fluid{ max-width:50px; margin:0 10px 0 0;}
 
-.testimonial-sec .img-fluid{ max-width:185px; display:block; margin:0 15px 0 0;}
+.testimonial-sec .img-fluid{ max-width:185px; display:none; margin:0 15px 0 0;}
+
 .bp-add-banner{ background-image:url("../assets/img/bp-add-banner.jpg"); height:480px;
     background-repeat:no-repeat; background-size:contain; background-position:bottom center;
     background-attachment:fixed; display:block;
@@ -111,6 +112,11 @@ footer .nav li .nav-link{ color:#FFF;}
 .inner-title-banner.erectile-page{ background-image:url("../assets/img/inner-banner-erectile.jpg");}
 .inner-title-banner.truvada-page{ background-image:url("../assets/img/inner-banner-truvada.jpg");}
 .inner-title-banner.bravopak-page{ background-image:url("../assets/img/inner-banner-bravopak.jpg");}
+.inner-title-banner.injuredworkers-page{ background-image:url("../assets/img/inner-banner-injuredworkers.jpg");}
+.inner-title-banner.provider-page{ background-image:url("../assets/img/inner-banner-provider.jpg");}
+.inner-title-banner.compounding-page{ background-image:url("../assets/img/inner-banner-compounding.jpg");}
+.inner-title-banner.contact-page{ background-image:url("../assets/img/inner-banner-contact.jpg");}
+.inner-title-banner.covid-page{ background-image:url("../assets/img/inner-banner-covid.jpg");}
 
 .covid-banner .container{ max-width:1000px; display:flex; justify-content:space-between; padding:10px 15px;}
 
