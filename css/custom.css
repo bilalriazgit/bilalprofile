@@ -117,6 +117,12 @@ footer .nav li .nav-link{ color:#FFF;}
 .inner-title-banner.compounding-page{ background-image:url("../assets/img/inner-banner-compounding.jpg");}
 .inner-title-banner.contact-page{ background-image:url("../assets/img/inner-banner-contact.jpg");}
 .inner-title-banner.covid-page{ background-image:url("../assets/img/inner-banner-covid.jpg");}
+.inner-title-banner.travel-page{ background-image:url("../assets/img/inner-banner-travel.jpg");}
+.inner-title-banner.workplace-page{ background-image:url("../assets/img/inner-banner-workplace.jpg");}
+
+.hours-bg{ background-image:url("../assets/img/hours-bg.jpg");
+    background-repeat:no-repeat; background-size:35%; background-position:97% center;
+}
 
 .covid-banner .container{ max-width:1000px; display:flex; justify-content:space-between; padding:10px 15px;}
 
